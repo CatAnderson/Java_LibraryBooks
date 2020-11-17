@@ -13,4 +13,8 @@ public class BookWorm {
     public String getName() {
         return this.name;
     }
+
+    public int getCollectionCount() {
+        return this.collection.size();
+    }
 }
