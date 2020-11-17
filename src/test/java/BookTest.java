@@ -9,12 +9,12 @@ public class BookTest {
 
     @Before
     public void before(){
-        book = new Book("Do Androids Dream of Electric Sheep?", "Philip K. Dick", "Science Fiction")
+        book = new Book("Do Androids Dream of Electric Sheep?", "Philip K. Dick", "Science Fiction");
     }
 
     @Test
     public void hasTitle(){
-        assertEquals("Do Androids Dream of Electric Sheep?", book.title);
+        assertEquals("Do Androids Dream of Electric Sheep?", book.getTitle());
     }
 
 }
