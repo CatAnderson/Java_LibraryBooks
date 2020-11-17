@@ -37,9 +37,19 @@ public class LibraryTest {
 //    full before adding a book.
 
     @Test
-    public void hasBookCapacity(){
+    public void hasStock(){
         assertEquals(5, library.getBookCapacity());
     }
 
+    @Test
+    public void fullStockDoNotAddBook(){
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        assertEquals(5, library.getBookCapacity());
+    }
 
 }
