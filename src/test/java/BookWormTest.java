@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class BookWormTest {
 
@@ -11,5 +14,10 @@ public class BookWormTest {
         bookWorm = new BookWorm("Violet");
         library = new Library();
         book = new Book("Do Androids Dream of Electric Sheep?", "Philip K. Dick", "Science Fiction");
+    }
+
+    @Test
+    public void hasName(){
+        assertEquals("Violet", bookWorm.getName());
     }
 }
