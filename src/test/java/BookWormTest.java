@@ -20,4 +20,9 @@ public class BookWormTest {
     public void hasName(){
         assertEquals("Violet", bookWorm.getName());
     }
+
+    @Test
+    public void hasNoBooksInCollection(){
+        assertEquals(0, bookWorm.getCollectionCount());
+    }
 }
