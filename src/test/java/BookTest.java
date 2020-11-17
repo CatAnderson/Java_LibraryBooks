@@ -17,4 +17,8 @@ public class BookTest {
         assertEquals("Do Androids Dream of Electric Sheep?", book.getTitle());
     }
 
+    @Test
+    public void hasAuthor(){
+        assertEquals("Philip K. Dick", book.getAuthor());
+    }
 }
