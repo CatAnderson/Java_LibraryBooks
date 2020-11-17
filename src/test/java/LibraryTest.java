@@ -15,7 +15,20 @@ public class LibraryTest {
     }
 
     @Test
-    public void addBookToLibrary(){
-        assertEquals(1, library.addBook());
+    public void hasNoBooks(){
+        assertEquals(0, library.bookCount());
+    }
+
+    @Test
+    public void addingBookToLibrary(){
+        library.addBook(book);
+        assertEquals(1, library.bookCount());
+    }
+
+    @Test
+    public void removeBookFromLibrary(){
+        library.addBook(book);
+        library.removeBook();
+        assertEquals(0, library.bookCount());
     }
 }
