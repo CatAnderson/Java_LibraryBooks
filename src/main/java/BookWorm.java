@@ -10,4 +10,8 @@ public class BookWorm {
         this.collection = new ArrayList<Book>();
     }
 
+
+    public String getName() {
+        return this.name;
+    }
 }
