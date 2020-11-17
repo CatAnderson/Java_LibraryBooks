@@ -21,4 +21,8 @@ public class Library {
     public Book removeBook() {
         return this.bookCollection.remove(0);
     }
+
+    public int getBookCapacity() {
+        return this.bookCapacity;
+    }
 }
