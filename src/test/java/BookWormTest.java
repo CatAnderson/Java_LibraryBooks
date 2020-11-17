@@ -27,10 +27,9 @@ public class BookWormTest {
     }
 
     @Test
-    public void hasBooksInCollection(){
+    public void canAddBooks(){
         bookWorm.addBookToCollection(book);
         bookWorm.addBookToCollection(book);
         assertEquals(2, bookWorm.getCollectionCount());
-
     }
 }

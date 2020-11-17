@@ -17,4 +17,8 @@ public class BookWorm {
     public int getCollectionCount() {
         return this.collection.size();
     }
+
+    public void addBookToCollection(Book book) {
+        this.collection.add(book);
+    }
 }
