@@ -25,4 +25,12 @@ public class BookWormTest {
     public void hasNoBooksInCollection(){
         assertEquals(0, bookWorm.getCollectionCount());
     }
+
+    @Test
+    public void hasBooksInCollection(){
+        bookWorm.addBookToCollection(book);
+        bookWorm.addBookToCollection(book);
+        assertEquals(2, bookWorm.getCollectionCount());
+
+    }
 }
