@@ -31,4 +31,15 @@ public class LibraryTest {
         library.removeBook();
         assertEquals(0, library.bookCount());
     }
+
+    //    Add a capacity to the library
+//    and write a method to check if stock is
+//    full before adding a book.
+    
+    @Test
+    public void hasBookCapacity(){
+        assertEquals(0, library.getBookCapacity());
+    }
+
+
 }
